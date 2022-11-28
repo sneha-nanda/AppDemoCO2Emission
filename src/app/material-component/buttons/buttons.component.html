@@ -1,0 +1,174 @@
+<!-- <mat-card>
+	<mat-card-content>    
+	<mat-card-title>Buttons</mat-card-title>
+			<mat-card-subtitle>Angular Material buttons are native <code> button or a </code> elements enhanced with Material Design styling and ink ripples. <code><a href="https://material.angular.io/components/button/overview" target="_blank">Official Doc</a></code></mat-card-subtitle>
+	
+			<h4>Basic Buttons <br/><code class="bg-light">&lt;button mat-button color="primary"&gt;Primary&lt;/button&gt;</code></h4>
+		<div class="button-row">
+			<button mat-button>Basic</button>
+			<button mat-button color="primary">Primary</button>
+			<button mat-button color="accent">Accent</button>
+			<button mat-button color="warn">Warn</button>
+			<button mat-button disabled>Disabled</button>
+			<a mat-button routerLink=".">Link</a>
+		</div>
+
+		<h4>Raised Buttons <br/><code class="bg-light">&lt;button mat-raised-button color="primary"&gt;Primary&lt;/button&gt;</code></h4>
+		<div class="button-row">
+			<button mat-raised-button>Basic</button>
+			<button mat-raised-button color="primary">Primary</button>
+			<button mat-raised-button color="accent">Accent</button>
+			<button mat-raised-button color="warn">Warn</button>
+			<button mat-raised-button disabled>Disabled</button>
+			<a mat-raised-button routerLink=".">Link</a>
+		</div>
+
+		<h4>Icon Buttons <br/><code class="bg-light">&lt;button mat-icon-button color="primary"&gt; <br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;mat-icon aria-label="Example icon-button with a heart icon"&gt;favorite&lt;/mat-icon&gt;<br/>&lt;/button&gt;</code></h4>
+		<div class="button-row">
+			<button mat-icon-button>
+				<mat-icon aria-label="Example icon-button with a heart icon">favorite</mat-icon>
+			</button>
+			<button mat-icon-button color="primary">
+				<mat-icon aria-label="Example icon-button with a heart icon">favorite</mat-icon>
+			</button>
+			<button mat-icon-button color="accent">
+				<mat-icon aria-label="Example icon-button with a heart icon">favorite</mat-icon>
+			</button>
+			<button mat-icon-button color="warn">
+				<mat-icon aria-label="Example icon-button with a heart icon">favorite</mat-icon>
+			</button>
+			<button mat-icon-button disabled>
+				<mat-icon aria-label="Example icon-button with a heart icon">favorite</mat-icon>
+			</button>
+		</div>
+
+		<h4>Fab Buttons <br/><code class="bg-light">&lt;button mat-fab color="primary"&gt;Primary&lt;/button&gt;</code></h4>
+		<div class="button-row">
+			<button mat-fab>Basic</button>
+			<button mat-fab color="primary">Primary</button>
+			<button mat-fab color="accent">Accent</button>
+			<button mat-fab color="warn">Warn</button>
+			<button mat-fab disabled>Disabled</button>
+			<button mat-fab>
+				<mat-icon aria-label="Example icon-button with a heart icon">favorite</mat-icon>
+			</button>
+			<a mat-fab routerLink=".">Link</a>
+		</div>
+
+		<h4>Mini Fab Buttons <br/><code class="bg-light">&lt;button mat-mini-fab color="primary"&gt;Primary&lt;/button&gt;</code></h4>
+		<div class="button-row">
+			<button mat-mini-fab>Base</button>
+			<button mat-mini-fab color="primary">Pri</button>
+			<button mat-mini-fab color="accent">Acc</button>
+			<button mat-mini-fab color="warn">Warn</button>
+			<button mat-mini-fab disabled>Dis</button>
+			<button mat-mini-fab>
+				<mat-icon aria-label="Example icon-button with a heart icon">favorite</mat-icon>
+			</button>
+			<a mat-mini-fab routerLink=".">Link</a>
+		</div>
+
+		<h4>Basic button-toggles <span class="bg-success text-white rounded font-12 p-l-5 p-r-5">New</span></h4>
+		<mat-button-toggle-group name="fontStyle" aria-label="Font Style">
+		  	<mat-button-toggle value="bold">Bold</mat-button-toggle>
+		  	<mat-button-toggle value="italic">Italic</mat-button-toggle>
+		  	<mat-button-toggle value="underline">Underline</mat-button-toggle>
+		</mat-button-toggle-group>
+
+
+		<h4>Button toggle </h4>  
+		<mat-button-toggle-group #group="matButtonToggleGroup">
+			<mat-button-toggle value="left">
+				<mat-icon>format_align_left</mat-icon>
+			</mat-button-toggle>
+			<mat-button-toggle value="center">
+				<mat-icon>format_align_center</mat-icon>
+			</mat-button-toggle>
+			<mat-button-toggle value="right">
+				<mat-icon>format_align_right</mat-icon>
+			</mat-button-toggle>
+			<mat-button-toggle value="justify" disabled>
+				<mat-icon>format_align_justify</mat-icon>
+			</mat-button-toggle>
+		</mat-button-toggle-group>
+		<div class="m-t-20">Selected value: {{group.value}}</div>  
+
+
+		<h4>Button toggle appearance <span class="bg-success text-white rounded font-12 p-l-5 p-r-5">New</span></h4>
+		<span>Default appearance:</span>
+		<mat-button-toggle-group name="fontStyle" aria-label="Font Style" class="m-l-20">
+		    <mat-button-toggle value="bold">Bold</mat-button-toggle>
+		    <mat-button-toggle value="italic">Italic</mat-button-toggle>
+		    <mat-button-toggle value="underline">Underline</mat-button-toggle>
+		</mat-button-toggle-group><br/>
+
+		<div class="m-t-20">
+			<span>Legacy appearance:</span>
+		  	<mat-button-toggle-group appearance="legacy" name="fontStyle" aria-label="Font Style" class="m-l-20">
+			    <mat-button-toggle value="bold">Bold</mat-button-toggle>
+			    <mat-button-toggle value="italic">Italic</mat-button-toggle>
+			    <mat-button-toggle value="underline">Underline</mat-button-toggle>
+		  	</mat-button-toggle-group>
+		</div>
+	</mat-card-content>
+</mat-card> -->
+<mat-card-content>
+	<div fxLayout="row" fxFlex="100" fxLayoutAlign="space-around center">
+	  <div fxLayout="column">
+		<mat-card>
+			<mat-card-content>	
+			<mat-card-title>Tips to help you avoid food waste and reduce carbon emissions</mat-card-title>
+			<mat-card-subtitle>Here Are the <code> Facts </code>    Source Link to this <code><a href="https://impactful.ninja/how-effective-is-carbon-offsetting/" target="_blank">Blog</a></code></mat-card-subtitle>
+			Food waste is a global problem, and one that we want to highlight as part of Food Waste Action Week. When food breaks down at landfill sites, it releases harmful greenhouse gases like methane into the atmosphere. Approximately 8-10% of the world’s greenhouse gas emissions relate to food waste. If food waste were a country, it would be the third biggest emitter of greenhouse gases, behind the US and China.
+
+			We waste an estimated 1.3 billion tonnes of food every year – around one third of all food produced for human consumption. This scale of food waste leads to habitat destruction, decreased biodiversity and overuse of land and water. To combat the climate emergency and help protect our environment, we all need to reduce the amount of food we waste.
+			
+			Throwing less away makes economic as well as environmental sense. You can also reduce the carbon impact of the food you eat by eating less meat and dairy, as well as buying more locally source, seasonal food. A 2014 study showed going vegetarian could save up to a tonne of carbon dioxide a year, while opting for food that’s grown locally and in season means it will have travelled fewer ‘food miles’ before it makes it onto your plate.
+		</mat-card-content>	
+		</mat-card>
+	  </div>
+	  <div fxLayout="column">
+		<mat-card>
+			<mat-card-content>	
+			<mat-card-title>Top tips to reduce your carbon emissions </mat-card-title>
+			<mat-card-subtitle>Here Are the <code> Facts </code>    Source Link to this <code><a href="https://impactful.ninja/how-effective-is-carbon-offsetting/" target="_blank">Blog</a></code></mat-card-subtitle>
+			In the UK, around 22% of the country’s carbon emissions come from our homes – including heating, lighting and appliances. The way we travel – from driving to work or the shops to jet setting around the globe on holiday – comes close behind heating for the volume of carbon emissions produced.
+
+			We can reduce our carbon emissions by improving our homes, choosing low carbon travel options and making small behaviour changes – all while having a positive impact on addressing the climate emergency.
+			
+			Here, we take a look at options to suit all budgets and lifestyles, from updating your heating controls, replacing your bulbs with LEDs or making the switch to an electric vehicle.
+		</mat-card-content>	
+		</mat-card>
+	  </div>
+	</div>
+</mat-card-content>
+
+<div class="row">
+	<div class="col-md-3 col-xxxl-4">
+		<mat-card>
+			<mat-card-content>	
+			<mat-card-title>How Effective Is Carbon Offsetting Really? </mat-card-title>
+			<mat-card-subtitle>Here Are the <code> Facts </code>    Source Link to this <code><a href="https://impactful.ninja/how-effective-is-carbon-offsetting/" target="_blank">Blog</a></code></mat-card-subtitle>
+		The current global climate crisis threatens our planet’s environmental, economic, and social health. And carbon offsets are often shown as one of the ways we can reduce greenhouse gas (GHG) emissions and our carbon footprint to ensure a sustainable planet for future generations. So we had to ask: How effective is carbon offsetting really?
+		Carbon offsetting is effective if it is additional – it reduces carbon emissions more than would have occurred without it – and permanent. Renewable energy, energy efficiency, carbon sequestration, and aviation offsets are a good start; however, cutting emissions from the source is more effective.
+		
+		Carbon offsets are a controversial topic. Supporters tout their ability to improve environmental health, while opposers assert that they don’t really work. So who is correct? Keep reading to find out how effective carbon offsetting is, really. And how we can make it even more effective in the future. 
+		Carbon offsets play a crucial role in reducing our carbon footprint, the amount of carbon (CO2) emissions associated with an individual or an entity. 
+		
+		“Carbon Offset: a way for a company or person to reduce the level of carbon dioxide for which they are responsible by paying money to a company that works to reduce the total amount produced in the world, for example by planting trees”
+		
+		Oxford Dictionary
+		Carbon offsets reduce GHG emissions from coal, oil, and natural gas. Reducing your consumption of these, in turn, reduces your carbon footprint, which has huge impacts on environmental, economic, and public health.
+		
+		“Carbon footprint: the amount of greenhouse gases and specifically carbon dioxide emitted by something (such as a person’s activities or a product’s manufacture and transport) during a given period”
+		
+		Merriam Webster
+		When you hear the words “carbon offset”, think about the term “compensation”. Essentially, carbon offsets are reductions in GHG emissions that are used to compensate for emissions occurring elsewhere. They are measured in tons of carbon dioxide (CO2) equivalents and are bought and sold through international brokers, online retailers, and trading platforms. 
+		
+		Because GHGs are found everywhere in our atmosphere, cutting GHGs at any location on earth provides emission reduction benefits. 
+		
+		
+		</mat-card-content>	
+		</mat-card>
+	</div>
+</div>

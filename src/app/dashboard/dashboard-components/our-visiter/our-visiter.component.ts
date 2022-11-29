@@ -33,7 +33,7 @@ export class OurVisiterComponent {
 
   constructor() {
     this.VisitorChartOptions = {
-      series: [45, 15, 27, 18],
+      series: [45, 15, 27],
       chart: {
         type: "donut",
         fontFamily: "Poppins,sans-serif",
@@ -42,15 +42,27 @@ export class OurVisiterComponent {
       plotOptions: {
         pie: {
           donut: {
-            size: "80px",
+            labels: {
+              show: true,
+              total:{
+                show :true
+              },
+            },
+
+            size: "60px",
+            
           },
+          
         },
       },
       tooltip: {
         fillSeriesColor: false,
       },
       dataLabels: {
-        enabled: false,
+        enabled: true,
+        // formatter: function (val) {
+        //   return val + "%"
+        // },
       },
       stroke: {
         width: 0,
@@ -58,8 +70,10 @@ export class OurVisiterComponent {
       legend: {
         show: false,
       },
-      labels: ["Transport", "Lifestyle", "Living", "Other"],
-      colors: ["#1e88e5", "#26c6da", "#745af2","#eceff1"],
+      // labels: ["Transport", "Lifestyle", "Living", "Other"],
+      // colors: ["#1e88e5", "#26c6da", "#745af2","#eceff1"],
+      labels: ["Transport", "Lifestyle", "Living"],
+      colors: ["#1e88e5", "#26c6da","#745af2"],
       responsive: [
         {
           breakpoint: 767,

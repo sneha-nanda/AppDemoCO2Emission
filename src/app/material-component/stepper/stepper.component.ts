@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import {STEPPER_GLOBAL_OPTIONS} from '@angular/cdk/stepper';
 import { MatStepperModule } from '@angular/material/stepper';
 import { Option, currency, foods, foodType } from 'src/app/data/default-data';
@@ -15,6 +15,11 @@ import { MatCardModule } from '@angular/material/card';
 	}]
 })
 export class StepperComponent implements OnInit {
+	range = new FormGroup({
+		start: new FormControl<Date | null>(null),
+		end: new FormControl<Date | null>(null),
+	  });
+	  
 	isLinear = false;
 	livingFormGroup: FormGroup=Object.create(null);
 	transportFormGroup: FormGroup=Object.create(null);
@@ -41,9 +46,6 @@ export class StepperComponent implements OnInit {
 	transportseventhFormGroup: FormGroup=Object.create(null);
 	transporteighthFormGroup: FormGroup=Object.create(null);
 	transportninthFormGroup: FormGroup=Object.create(null);
-	transporttenthFormGroup: FormGroup=Object.create(null);
-	transporteleventhFormGroup: FormGroup=Object.create(null);
-	transporttwelvethFormGroup: FormGroup=Object.create(null);
 
 	//living
 	lifestylefirstFormGroup: FormGroup=Object.create(null);
@@ -150,43 +152,8 @@ export class StepperComponent implements OnInit {
 		electricitylargeCtrl: [''],
 	  });
 
-		//Co2 App
-		this.livingFormGroup = this._formBuilder.group({
-			furnitureCtrl: [''],
-			refrigeratorCtrl: [''],
-			electricityCtrl: [''],
-			gasCtrl: [''],
-			naturalgasCtrl: [''],
-			glassCtrl: [''],
-			booksPapersCtrl: [''],
-			plasticCtrl: [''],
-			metalsCtrl: [''],
-			currencyCtrl: ['USD'],
-		  });
-		  this.transportFormGroup = this._formBuilder.group({
-			carDieselCtrl: [''],
-			carPetrolCtrl: [''],
-			carElectricCtrl: [''],
-			internationalFlightCtrl: [''],
-			domesticFlightctrl: [''],
-			busCtrl: [''],
-			waterCtrl: [''],
-			railCtrl: [''],
-		  });
-		  this.foodFormGroup = this._formBuilder.group({
-			foodTypeCtrl: [''],
-			foodCtrl: [''],
-			drinksCtrl: [''],
-			clothingCtrl: [''],
-			wfhCtrl: [''],
-			hotelCtrl:[''],
-		  });
-		//   this.forthFormGroup = this._formBuilder.group({
-		// 	secondCtrl: [''],
-		//   });
 	}
 
-	//logic here
 	foods: Option[] = foods;
 	currency: Option[] = currency;
 	foodType: Option[] = foodType;

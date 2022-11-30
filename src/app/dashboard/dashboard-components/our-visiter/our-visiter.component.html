@@ -1,8 +1,8 @@
 <mat-card>
   <mat-card-content>
-    <mat-card-title>Co2 Emission by Category</mat-card-title>
-    <mat-card-subtitle>CO2 Emissions details</mat-card-subtitle>
-    <div class="piechart">
+    <mat-card-title>Your Carbon Emission by Category</mat-card-title>
+    <!-- <mat-card-subtitle>Carbon Emissions details</mat-card-subtitle> -->
+    <div class="piechart" style="margin-top:33px;">
       <apx-chart
         [series]="VisitorChartOptions.series"
         [chart]="VisitorChartOptions.chart"
@@ -27,13 +27,13 @@
         </h6>
       </li>
       <li>
-        <h6 class="text-info m-0">
-          <i class="mdi mdi-checkbox-blank-circle font-10 m-r-10"></i>Transport
+        <h6 class="text-purple m-0">
+          <i class="mdi mdi-checkbox-blank-circle font-10 m-r-10"></i>Travel
         </h6>
       </li>
       <li>
-        <h6 class="text-purple m-0">
-          <i class="mdi mdi-checkbox-blank-circle font-10 m-r-10"></i>Living
+        <h6 class="text-info m-0">
+          <i class="mdi mdi-checkbox-blank-circle font-10 m-r-10"></i>House
         </h6>
       </li>
     </ul>

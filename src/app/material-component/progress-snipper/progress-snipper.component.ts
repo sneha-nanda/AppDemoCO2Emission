@@ -7,7 +7,7 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
   styleUrls: ['./progress-snipper.component.scss']
 })
 export class ProgressSnipperComponent {
-  color = 'warn';
+  color = 'info';
   mode = 'determinate';
   value = 50;
 }

@@ -1,1 +1,44 @@
 /* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+.mat-toolbar.mat-primary {
+    background: #2f8f47 !important;
+  }
+  #snav .mat-list-item.selected .mat-list-item-content a{
+    background-color : #2f8f47 !important;
+  }
+  #snav .mat-list-item .mat-list-item-content:hover a{
+    color : #3ad160 !important;
+  }
+  .mat-mini-fab.mat-primary {
+    background : #2f8f47 !important;
+  }
+  .mat-step-header .mat-step-icon-state-edit {
+    background : #2f8f47 !important;
+  }
+  .mat-step-header .mat-step-icon-selected, .mat-step-header .mat-step-icon-state-done, .mat-step-header .mat-step-icon-state-edit{
+    background : #2f8f47 !important;
+  }
+  .mat-raised-button.mat-accent{
+  background : #2f8f47 !important;
+}
+.mat-raised-button.mat-primary{
+    background : #2f8f47 !important; 
+}
+.mat-tab-group.mat-primary .mat-ink-bar{
+    background : #2f8f47 !important;
+}
+.text-purple{
+color:#355E3B !important;
+}
+.text-success{
+    color:#00A36C !important;
+    }
+    .text-info{
+        color: #0BDA51 !important;
+        }
+        .mat-progress-spinner {
+            color: #2f8f47 !important;
+          }
+          .mat-progress-spinner circle, .mat-spinner circle {
+            stroke: #3fb53f !important;
+            }

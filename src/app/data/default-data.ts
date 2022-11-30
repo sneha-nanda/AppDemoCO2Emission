@@ -33,3 +33,11 @@ export const foods: Option[] = [
     {value: 'pizza-1', viewValue: 'Pizza'},
     {value: 'tacos-2', viewValue: 'Tacos'},
   ];
+
+  export enum StorageKeys {
+    CO2IndividualConsumption = 'CO2IndividualConsumption',
+    CO2IndividualPerConsumption = 'CO2IndividualPerConsumption',
+    UserDetail = 'UserDetails',
+    CO2IndividualTotalConsumtion = 'CO2IndividualTotalConsumtion',
+    isSubmitted = 'false',
+  }

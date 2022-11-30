@@ -8,7 +8,7 @@
 
 			<mat-card-content>
 					<mat-card-title>Let's Calculate your CO2 Emission</mat-card-title>
-					  <mat-form-field>
+					  <!-- <mat-form-field>
 						<mat-label>Enter a date range</mat-label>
 						<mat-date-range-input [rangePicker]="picker">
 						  <input matStartDate matInput placeholder="Start date">
@@ -16,7 +16,7 @@
 						</mat-date-range-input>
 						<mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
 						<mat-date-range-picker #picker></mat-date-range-picker>
-					  </mat-form-field>
+					  </mat-form-field> -->
 			</mat-card-content>
 			<mat-tab-group class="demo-tab-group">
 				<mat-tab label="Tab 1">
@@ -28,9 +28,9 @@
 						<mat-vertical-stepper [linear]="isLinearvarient" #steppervarient class="m-t-20">
 							<mat-step [stepControl]="lifestylefirstFormGroup">
 							  <form [formGroup]="lifestylefirstFormGroup">
-								<ng-template matStepLabel>How many kgs of wood furnitures you have in your house?</ng-template>
+								<ng-template matStepLabel>How many kilograms of wood furnitures you have in your house?</ng-template>
 								<mat-form-field>
-								  <input matInput placeholder="Furniture(In kgs)" formControlName="furnitureCtrl" required>
+								  <input matInput type="number" placeholder="Furniture(In kgs)" formControlName="furnitureCtrl" required>
 								</mat-form-field>
 								<div>
 								  <button mat-raised-button matStepperNext color="accent">Next</button>
@@ -39,9 +39,9 @@
 							</mat-step>
 							<mat-step [stepControl]="lifestylesecondFormGroup">
 								<form [formGroup]="lifestylesecondFormGroup">
-								  <ng-template matStepLabel>How many refrigerators you have in your house?</ng-template>
+								  <ng-template matStepLabel>What is the weight of refrigerators you have in your house?</ng-template>
 								  <mat-form-field>
-									<input matInput placeholder="Refrigerator(In Kgs)" formControlName="refrigeratorCtrl" required>
+									<input matInput type="number" placeholder="Refrigerator(In Kgs)" formControlName="refrigeratorCtrl" required>
 								  </mat-form-field>
 								  <div>
 									<button mat-raised-button matStepperNext color="accent">Next</button>
@@ -50,9 +50,9 @@
 							  </mat-step>
 							  <mat-step [stepControl]="lifestylethirdFormGroup">
 								<form [formGroup]="lifestylethirdFormGroup">
-								  <ng-template matStepLabel>How much electricity you consume for household?</ng-template>
+								  <ng-template matStepLabel>How many KWh of electricity do you consume in your house?</ng-template>
 								  <mat-form-field>
-									<input matInput placeholder="Electricity(In Kwh)" formControlName="electricityCtrl" required>
+									<input matInput type="number" placeholder="Electricity(In Kwh)" formControlName="electricityCtrl" required>
 								  </mat-form-field>
 								  <div>
 									<button mat-raised-button matStepperNext color="accent">Next</button>
@@ -61,9 +61,9 @@
 							  </mat-step>
 							  <mat-step [stepControl]="lifestylefourthFormGroup">
 								<form [formGroup]="lifestylefourthFormGroup">
-								  <ng-template matStepLabel>Quantity of Gas consumption in house?</ng-template>
+								  <ng-template matStepLabel>How many KWh of LPG do you consume in your house?</ng-template>
 								  <mat-form-field>
-									<input matInput placeholder="Gas(kwh)" formControlName="gasCtrl" required>
+									<input matInput type="number" placeholder="Gas(kwh)" formControlName="gasCtrl" required>
 								  </mat-form-field>
 								  <div>
 									<button mat-raised-button matStepperNext color="accent">Next</button>
@@ -72,9 +72,9 @@
 							  </mat-step>
 							<mat-step [stepControl]="lifestylefifthFormGroup">
 							  <form [formGroup]="lifestylefifthFormGroup">
-								<ng-template matStepLabel>Quantity of Natural Gas consumption in house?</ng-template>
+								<ng-template matStepLabel>How many KWh of natural gas do you consume in your house?</ng-template>
 								<mat-form-field>
-								  <input matInput placeholder="naturalgas" formControlName="naturalgasCtrl" required>
+								  <input matInput type="number" placeholder="naturalgas" formControlName="naturalgasCtrl" required>
 								</mat-form-field>
 								<div class="button-row">
 								  <button mat-raised-button color="primary" matStepperPrevious>Back</button>
@@ -84,9 +84,9 @@
 							</mat-step>
 							<mat-step [stepControl]="lifestylesixthFormGroup">
 								<form [formGroup]="lifestylesixthFormGroup">
-								  <ng-template matStepLabel>How much of glass consumption you do in household?(in kgs)</ng-template>
+								  <ng-template matStepLabel>How many kilograms of glass do you consume in your house?</ng-template>
 								  <mat-form-field>
-									<input matInput placeholder="glass(in Kgs)" formControlName="glassCtrl" required>
+									<input matInput type="number" placeholder="glass(in Kgs)" formControlName="glassCtrl" required>
 								  </mat-form-field>
 								  <div>
 									<button mat-raised-button matStepperNext color="accent">Next</button>
@@ -95,9 +95,9 @@
 							  </mat-step>
 							  <mat-step [stepControl]="lifestyleseventhFormGroup">
 								<form [formGroup]="lifestyleseventhFormGroup">
-								  <ng-template matStepLabel>How much of Paper/Books consumption you do in household?</ng-template>
+								  <ng-template matStepLabel>How many kilograms of paper/books do you have in your house?</ng-template>
 								  <mat-form-field>
-									<input matInput placeholder="Books,Papers(in kgs)" formControlName="booksPapersCtrl" required>
+									<input matInput type="number" placeholder="Books,Papers(in kgs)" formControlName="booksPapersCtrl" required>
 								  </mat-form-field>
 								  <div>
 									<button mat-raised-button matStepperNext color="accent">Next</button>
@@ -106,9 +106,9 @@
 							  </mat-step>
 							  <mat-step [stepControl]="lifestyleeighthFormGroup">
 								<form [formGroup]="lifestyleeighthFormGroup">
-								  <ng-template matStepLabel>How much of plastic consumption you do in household?</ng-template>
+								  <ng-template matStepLabel>How many kilograms of plastic do you consume in your house?</ng-template>
 								  <mat-form-field>
-									<input matInput placeholder="plastic(in kgs)" formControlName="plasticCtrl" required>
+									<input matInput type="number" placeholder="plastic(in kgs)" formControlName="plasticCtrl" required>
 								  </mat-form-field>
 								  <div class="button-row">
 									<button mat-raised-button color="primary" matStepperPrevious>Back</button>
@@ -118,9 +118,9 @@
 							  </mat-step>
 							  <mat-step [stepControl]="lifestyleninthFormGroup">
 								  <form [formGroup]="lifestyleninthFormGroup">
-									<ng-template matStepLabel>How much of metal consumption you do in household?</ng-template>
+									<ng-template matStepLabel>How many kilograms of metal do you have in your house?</ng-template>
 									<mat-form-field>
-									  <input matInput placeholder="metals(in kgs)" formControlName="metalsCtrl" required>
+									  <input matInput type="number" placeholder="metals(in kgs)" formControlName="metalsCtrl" required>
 									</mat-form-field>
 									<div>
 									  <button mat-raised-button matStepperNext color="accent">Next</button>
@@ -130,9 +130,9 @@
 								<mat-step [stepControl]="lifestyletenthFormGroup">
 								  <form [formGroup]="lifestyletenthFormGroup">
 									
-									<ng-template matStepLabel>How many small electrical appliances you have in your house?</ng-template>
+									<ng-template matStepLabel>What is the weight of small electrical appliances you have in your house?</ng-template>
 									<mat-form-field>
-									  <input matInput placeholder="Electrical small Appliances(In Kgs)" formControlName="electricitysmallCtrl" required>
+									  <input matInput type="number" placeholder="Electrical small Appliances(In Kgs)" formControlName="electricitysmallCtrl" required>
 									</mat-form-field>
 									<div>
 									  <button mat-raised-button matStepperNext color="accent">Next</button>
@@ -142,9 +142,9 @@
 								<mat-step [stepControl]="lifestyleeleventhFormGroup">
 									<form [formGroup]="lifestyleeleventhFormGroup">
 									  
-									  <ng-template matStepLabel>How many electrical appliances used for IT you have in house?</ng-template>
+									  <ng-template matStepLabel>What is the weight of IT appliances you have in your house?</ng-template>
 									  <mat-form-field>
-										<input matInput placeholder="Electrical IT Appliances(In Kgs)" formControlName="electricitysITCtrl" required>
+										<input matInput type="number" placeholder="Electrical IT Appliances(In Kgs)" formControlName="electricitysITCtrl" required>
 									  </mat-form-field>
 									  <div>
 										<button mat-raised-button matStepperNext color="accent">Next</button>
@@ -154,9 +154,9 @@
 								  <mat-step [stepControl]="lifestyletwelvethFormGroup">
 									<form [formGroup]="lifestyletwelvethFormGroup">
 									  
-									  <ng-template matStepLabel>How many large electrical appliances you have in your house?</ng-template>
+									  <ng-template matStepLabel>What is the weight of large electrical appliances you have in your house?</ng-template>
 									  <mat-form-field>
-										<input matInput placeholder="Electrical large Appliances(In Kgs)" formControlName="electricitylargeCtrl" required>
+										<input matInput type="number" placeholder="Electrical large Appliances(In Kgs)" formControlName="electricitylargeCtrl" required>
 									  </mat-form-field>
 									  <div>
 										<button mat-raised-button matStepperNext color="accent">Next</button>
@@ -183,31 +183,31 @@
 						<mat-vertical-stepper [linear]="isLinearvarient" #steppervarient class="m-t-20">
 							<mat-step [stepControl]="foodfirstFormGroup">
 							  <form [formGroup]="foodfirstFormGroup">
-								<ng-template matStepLabel>How much do you spend in Vegetarian food?</ng-template>
+								<ng-template matStepLabel>How much do you spend in GBP for your food?</ng-template>
 								<mat-form-field>
-								  <input matInput placeholder="Veg Food(In GBP)" formControlName="foodTypeCtrl" required>
+								  <input matInput type="number" placeholder="Veg Food(In GBP)" formControlName="foodTypeCtrl" required>
 								</mat-form-field>
 								<div>
 								  <button mat-raised-button matStepperNext color="accent">Next</button>
 								</div>
 							  </form>
 							</mat-step>
-							<mat-step [stepControl]="foodsecondFormGroup">
+							<!-- <mat-step [stepControl]="foodsecondFormGroup">
 								<form [formGroup]="foodsecondFormGroup">
 								  <ng-template matStepLabel>How much do you spend in Non-Vegetarian food?</ng-template>
 								  <mat-form-field>
-									<input matInput placeholder="Non-Veg Food(In GBP)" formControlName="foodCtrl" required>
+									<input matInput type="number" placeholder="Non-Veg Food(In GBP)" formControlName="foodCtrl" required>
 								  </mat-form-field>
 								  <div>
 									<button mat-raised-button matStepperNext color="accent">Next</button>
 								  </div>
 								</form>
-							  </mat-step>
+							  </mat-step> -->
 							  <mat-step [stepControl]="foodthirdFormGroup">
 								<form [formGroup]="foodthirdFormGroup">
-								  <ng-template matStepLabel>How much do you spend in Drinks?</ng-template>
+								  <ng-template matStepLabel>How much do you spend in GBP for your drinks?</ng-template>
 								  <mat-form-field>
-									<input matInput placeholder="Drinks(In GBP)" formControlName="drinksCtrl" required>
+									<input matInput type="number" placeholder="Drinks(In GBP)" formControlName="drinksCtrl" required>
 								  </mat-form-field>
 								  <div>
 									<button mat-raised-button matStepperNext color="accent">Next</button>
@@ -216,9 +216,9 @@
 							  </mat-step>
 							  <mat-step [stepControl]="foodfourthFormGroup">
 								<form [formGroup]="foodfourthFormGroup">
-								  <ng-template matStepLabel>How much  do you spend on clothing?</ng-template>
+								  <ng-template matStepLabel>How much do you spend in GBP for your clothing?</ng-template>
 								  <mat-form-field>
-									<input matInput placeholder="clothing(GBP)" formControlName="clothingCtrl" required>
+									<input matInput type="number" placeholder="clothing(GBP)" formControlName="clothingCtrl" required>
 								  </mat-form-field>
 								  <div>
 									<button mat-raised-button matStepperNext color="accent">Next</button>
@@ -229,7 +229,7 @@
 								<form [formGroup]="foodfifthFormGroup">
 								  <ng-template matStepLabel>How many hours you work from home?</ng-template>
 								  <mat-form-field>
-									<input matInput placeholder="WorkfromHome(In Hrs)" formControlName="wfhCtrl" required>
+									<input matInput type="number" placeholder="WorkfromHome(In Hrs)" formControlName="wfhCtrl" required>
 								  </mat-form-field>
 								  <div class="button-row">
 									<button mat-raised-button color="primary" matStepperPrevious>Back</button>
@@ -239,9 +239,9 @@
 							  </mat-step>
 							  <mat-step [stepControl]="foodsixthFormGroup">
 								<form [formGroup]="foodsixthFormGroup">
-								  <ng-template matStepLabel>How many times you stayed in hotel?</ng-template>
+								  <ng-template matStepLabel>How many days you stay in a hotel?</ng-template>
 								  <mat-form-field>
-									<input matInput placeholder="hotel(rooms per night)" formControlName="hotelCtrl" required>
+									<input matInput type="number" placeholder="hotel(rooms per night)" formControlName="hotelCtrl" required>
 								  </mat-form-field>
 								  <div class="button-row">
 									<button mat-raised-button color="primary" matStepperPrevious>Back</button>
@@ -269,9 +269,9 @@
 							<mat-vertical-stepper [linear]="isLinearvarient" #steppervarient class="m-t-20">
 								<mat-step [stepControl]="transportfirstFormGroup">
 								  <form [formGroup]="transportfirstFormGroup">
-									<ng-template matStepLabel>Please enter the number of Kms travelled using Diesel cars</ng-template>
+									<ng-template matStepLabel>How many kilometers you travel using Diesel cars?</ng-template>
 									<mat-form-field>
-									  <input matInput placeholder="dieselcars(in Kms)" formControlName="carDieselCtrl" required>
+									  <input matInput type="number" placeholder="dieselcars(in Kms)" formControlName="carDieselCtrl" required>
 									</mat-form-field>
 									<div>
 									  <button mat-raised-button matStepperNext color="accent">Next</button>
@@ -280,9 +280,9 @@
 								</mat-step>
 								<mat-step [stepControl]="transportsecondFormGroup">
 									<form [formGroup]="transportsecondFormGroup">
-									  <ng-template matStepLabel>Please enter the number of Kms travelled using Petrol cars</ng-template>
+									  <ng-template matStepLabel>How many kilometers you travel using Petrol cars?</ng-template>
 									  <mat-form-field>
-										<input matInput placeholder="petrolcars(Kms)" formControlName="carPetrolCtrl" required>
+										<input matInput type="number" placeholder="petrolcars(Kms)" formControlName="carPetrolCtrl" required>
 									  </mat-form-field>
 									  <div>
 										<button mat-raised-button matStepperNext color="accent">Next</button>
@@ -291,9 +291,9 @@
 								  </mat-step>
 								  <mat-step [stepControl]="transportthirdFormGroup">
 									<form [formGroup]="transportthirdFormGroup">
-									  <ng-template matStepLabel>Please enter the number of Kms travelled by regular taxies</ng-template>
+									  <ng-template matStepLabel>How many kilometers you travel by regular taxies?</ng-template>
 									  <mat-form-field>
-										<input matInput placeholder="taxi(in kms)" formControlName="carElectricCtrl" required>
+										<input matInput type="number" placeholder="taxi(in kms)" formControlName="carElectricCtrl" required>
 									  </mat-form-field>
 									  <div>
 										<button mat-raised-button matStepperNext color="accent">Next</button>
@@ -302,9 +302,9 @@
 								  </mat-step>
 								  <mat-step [stepControl]="transportfourthFormGroup">
 									<form [formGroup]="transportfourthFormGroup">
-									  <ng-template matStepLabel>How many international flights (To/from non-UK) in Economy class you take?</ng-template>
+									  <ng-template matStepLabel>How many kilometers you travel by international flights in economy class?</ng-template>
 									  <mat-form-field>
-										<input matInput placeholder="internationalFlight(in Kms)" formControlName="internationalFlightCtrl" required>
+										<input matInput type="number" placeholder="internationalFlight(in Kms)" formControlName="internationalFlightCtrl" required>
 									  </mat-form-field>
 									  <div>
 										<button mat-raised-button matStepperNext color="accent">Next</button>
@@ -313,9 +313,9 @@
 								  </mat-step>
 								<mat-step [stepControl]="transportfifthFormGroup">
 								  <form [formGroup]="transportfifthFormGroup">
-									<ng-template matStepLabel>How many domestic trips(Short-haul, to/from UK)in Economy class you take by air?</ng-template>
+									<ng-template matStepLabel>How many kilometers you travel by domestic flights in economy class?</ng-template>
 									<mat-form-field>
-									  <input matInput placeholder="domesticFlight(in Kms)" formControlName="domesticFlightctrl" required>
+									  <input matInput type="number" placeholder="domesticFlight(in Kms)" formControlName="domesticFlightctrl" required>
 									</mat-form-field>
 									<div class="button-row">
 									  <button mat-raised-button color="primary" matStepperPrevious>Back</button>
@@ -325,9 +325,9 @@
 								</mat-step>
 								<mat-step [stepControl]="transportsixthFormGroup">
 									<form [formGroup]="transportsixthFormGroup">
-									  <ng-template matStepLabel>How many trip you take by bus?</ng-template>
+									  <ng-template matStepLabel>How many kilometers you travel by bus?</ng-template>
 									  <mat-form-field>
-										<input matInput placeholder="Bus Travel(In Kms)" formControlName="busCtrl" required>
+										<input matInput type="number" placeholder="Bus Travel(In Kms)" formControlName="busCtrl" required>
 									  </mat-form-field>
 									  <div>
 										<button mat-raised-button matStepperNext color="accent">Next</button>
@@ -336,9 +336,9 @@
 								  </mat-step>
 								  <mat-step [stepControl]="transportseventhFormGroup">
 									<form [formGroup]="transportseventhFormGroup">
-									  <ng-template matStepLabel>How many cruise trip or ferries you take?</ng-template>
+									  <ng-template matStepLabel>How many kilometers you travel by ferries or cruise trips?</ng-template>
 									  <mat-form-field>
-										<input matInput placeholder="SeaTravel(In Kms)" formControlName="waterCtrl" required>
+										<input matInput type="number" placeholder="SeaTravel(In Kms)" formControlName="waterCtrl" required>
 									  </mat-form-field>
 									  <div>
 										<button mat-raised-button matStepperNext color="accent">Next</button>
@@ -347,9 +347,9 @@
 								  </mat-step>
 								  <mat-step [stepControl]="transporteighthFormGroup">
 									<form [formGroup]="transporteighthFormGroup">
-									  <ng-template matStepLabel>How many trips do you take by light raiL/trams?</ng-template>
+									  <ng-template matStepLabel>How many kilometers you travel by train/trams?</ng-template>
 									  <mat-form-field>
-										<input matInput placeholder="Rail/Trams Travel(in Kms)" formControlName="railCtrl" required>
+										<input matInput type="number" placeholder="Rail/Trams Travel(in Kms)" formControlName="railCtrl" required>
 									  </mat-form-field>
 									  <div class="button-row">
 										<button mat-raised-button color="primary" matStepperPrevious>Back</button>
@@ -359,9 +359,9 @@
 								  </mat-step>
 								  <mat-step [stepControl]="transportninthFormGroup">
 									<form [formGroup]="transportninthFormGroup">
-									  <ng-template matStepLabel>How many kms you travel by medium sized motorbike?</ng-template>
+									  <ng-template matStepLabel>How many kilometers you travel by motorbike?</ng-template>
 									  <mat-form-field>
-										<input matInput placeholder="Bike(in Kms)" formControlName="bikeCtrl" required>
+										<input matInput type="number" placeholder="Bike(in Kms)" formControlName="bikeCtrl" required>
 									  </mat-form-field>
 									  <div class="button-row">
 										<button mat-raised-button color="primary" matStepperPrevious>Back</button>
@@ -394,17 +394,19 @@
 									<button mat-raised-button color="primary" (click)="onSubmit()">
 										Submit
 									  </button>
-									  <p>Your results are getting calculated. Sit back and relax!</p>
+									  <p *ngIf="isSubmitted">Your results are getting calculated. Sit back and relax!</p>
 								</mat-card-content>
+								<div *ngIf="isSubmitted && !isCompleted">
+										<mat-spinner></mat-spinner>
+								</div>
 
-						  <mat-card-content>
-							You CO2 emission is <strong>102 tonnes</strong> which is <strong>15%</strong>greater than UK's average emission! Visit our <a routerLink="/dashboard" routerLinkActive="active">Dashboard</a> to view complete analytics 
-					  </mat-card-content> 
+						  <mat-card-content *ngIf="isCompleted">
+							You CO2 emission is <strong>{{CO2IndividualTotalConsumtion}} tonnes</strong> which is <strong>15% </strong>greater than UK's average emission! Visit our <a routerLink="/dashboard" routerLinkActive="active">Dashboard</a> to view complete analytics 
+						</mat-card-content> 
 							  </mat-card-subtitle>
 							</mat-card-header>
 						  </mat-card>
-					</div>  
- 
+					</div> 
 				</mat-tab>
 
 			</mat-tab-group>

@@ -84,6 +84,10 @@ export class StepperComponent implements OnInit {
   lifestyletenthFormGroup: FormGroup = Object.create(null);
   lifestyleeleventhFormGroup: FormGroup = Object.create(null);
   lifestyletwelvethFormGroup: FormGroup = Object.create(null);
+  
+    changeIndex(tabgroup: MatTabGroup, number: number) {
+    tabgroup.selectedIndex = number;
+  }
 
   constructor(
     private _formBuilder: FormBuilder,

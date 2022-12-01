@@ -23,6 +23,7 @@ import {
 } from "src/app/services/data-mapper";
 import { getControlvalue } from "src/app/services/common-utils";
 import { LocalService } from "src/app/services/local-service";
+import { MatTabGroup } from "@angular/material/tabs";
 
 @Component({
   selector: "app-stepper",

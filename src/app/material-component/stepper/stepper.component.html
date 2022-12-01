@@ -182,8 +182,8 @@
 					</ng-template>
 					<div class="demo-tab-content">
 						<mat-vertical-stepper [linear]="isLinearvarient" #steppervarient class="m-t-20">
-							<mat-step [stepControl]="foodfirstFormGroup">
-							  <form [formGroup]="foodfirstFormGroup">
+							<mat-step [stepControl]="foodsecondFormGroup">
+							  <form [formGroup]="foodsecondFormGroup">
 								<ng-template matStepLabel>How much do you spend in GBP for your food?</ng-template>
 								<mat-form-field>
 								  <input matInput type="number" placeholder="Veg Food(In GBP)" formControlName="foodCtrl" required>

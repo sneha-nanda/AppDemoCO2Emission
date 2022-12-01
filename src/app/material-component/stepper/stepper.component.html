@@ -18,7 +18,7 @@
 						<mat-date-range-picker #picker></mat-date-range-picker>
 					  </mat-form-field> -->
 			</mat-card-content>
-			<mat-tab-group class="demo-tab-group">
+			<mat-tab-group #tabgroup class="demo-tab-group">
 				<mat-tab label="Tab 1">
 					<ng-template mat-tab-label>
 					<mat-icon>home</mat-icon>
@@ -169,6 +169,7 @@
 							  <div class="button-row">
 								<button mat-raised-button color="primary" matStepperPrevious>Back</button>
 								<button mat-raised-button color="warn" (click)="steppervarient.reset()">Reset</button>
+                <button mat-raised-button color="success" (click)="changeIndex(tabgroup, 1)">Next Category</button>
 							  </div>
 							</mat-step>
 						  </mat-vertical-stepper> 
@@ -255,6 +256,7 @@
 							  <div class="button-row">
 								<button mat-raised-button color="primary" matStepperPrevious>Back</button>
 								<button mat-raised-button color="warn" (click)="steppervarient.reset()">Reset</button>
+                 <button mat-raised-button color="success" (click)="changeIndex(tabgroup, 1)">Next Category</button>
 							  </div>
 							</mat-step>
 						  </mat-vertical-stepper> 

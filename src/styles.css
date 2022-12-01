@@ -24,6 +24,9 @@
 .mat-raised-button.mat-primary{
     background : #2f8f47 !important; 
 }
+.mat-raised-button.mat-basic{
+  background : #dafa05 !important; 
+}
 .mat-tab-group.mat-primary .mat-ink-bar{
     background : #2f8f47 !important;
 }
@@ -41,4 +44,7 @@ color:#355E3B !important;
           }
           .mat-progress-spinner circle, .mat-spinner circle {
             stroke: #3fb53f !important;
+            }
+            .mat-input-element {
+              caret-color: #3fb53f !important;
             }

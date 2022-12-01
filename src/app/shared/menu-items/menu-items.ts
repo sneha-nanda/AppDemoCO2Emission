@@ -8,11 +8,12 @@ export interface Menu {
 }
 
 const MENUITEMS = [
+  { state: 'chips', type: 'link', name: 'Login', icon: 'vignette' },
+  { state: 'grid', type: 'link', name: 'Register', icon: 'view_comfy' },
   { state: 'dashboard', name: 'Dashboard', type: 'link', icon: 'av_timer' },
   { state: 'stepper', type: 'link', name: 'Record Emission', icon: 'web' },
   { state: 'button', type: 'link', name: 'Learn', icon: 'crop_7_5' },
-
-  // { state: 'grid', type: 'link', name: 'Grid List', icon: 'view_comfy' },
+  
   // { state: 'lists', type: 'link', name: 'Lists', icon: 'view_list' },
   // { state: 'menu', type: 'link', name: 'Menu', icon: 'view_headline' },
   // { state: 'tabs', type: 'link', name: 'Tabs', icon: 'tab' },
@@ -22,7 +23,7 @@ const MENUITEMS = [
   //   name: 'Expansion Panel',
   //   icon: 'vertical_align_center'
   // },
-  // { state: 'chips', type: 'link', name: 'Chips', icon: 'vignette' },
+  //{ state: 'login', type: 'link', name: 'Login', icon: 'vignette' },
   // { state: 'toolbar', type: 'link', name: 'Toolbar', icon: 'voicemail' },
   // {
   //   state: 'progress-snipper',
